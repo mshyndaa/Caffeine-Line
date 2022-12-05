@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="Payment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel = "icon" href = "../Payment/assets/logo.png" type = "image/x-icon">
+</head>
+<body>
+   <!--header-->
+   <div class="container">
+    <nav>
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="content">
+        <div class="logo"><img src="Assets/logo.png" alt=""></div>
+      <ul class="list">
+        <li><a href="../Home/Home.html">Home</a></li>
+        <li>
+          <a href="#" class="desktop-link">Menu</a>
+          <input type="checkbox" id="show-dropdown">
+          <label for="show-dropdown">Menu</label>
+          <ul>
+            <li><a href="../Coffee/coffee.html">Coffee</a></li>
+            <li><a href="../Tea/tea.html">Tea</a></li>
+            <li><a href="../Dessert/dessert.html">Desserts</a></li>
+          </ul>
+        </li>
+        <li><a href="../Payment/Payment.html">Payment</a></li>
+        <li><a href="../Contact Us/contactus.html">Contact Us</a></li>
+        <li class="button"><a href="../Sign Up/signup.html">Sign Up</a></li>
+        <li class="button"><a href="../Login/login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--content-->
+  <div class="container1">
+    <h1>Payment</h1>
+    <form>
+      <div class="form-group">
+        <div class= "border">
+            <input id="textName" type="text" name="name" placeholder="Username" required>
+            <input id="textEmail" type="email" name="email" placeholder="Email" required>
+            <input id="textCity" type="city" name="city" placeholder="City" required>
+            <input id="textAddress" type="address" name="address" placeholder="Address" required>
+            <div class="choosePayMethod">
+              <p>Choose payment method below</p>
+              <div class="method">
+                <input type="radio" id="PayPal" name="payMethod" value="PayPal" onclick="payCheck()" required>
+                <label for="PayPal"><img src="assets/paypal_logo.png" alt=""></label>
+              </div>
+              <div class="method">
+                <input type="radio" id="Visa" name="payMethod" value="Visa" onclick="payCheck()" required>
+                <label for="Visa"><img src="assets/visa_logo.png" alt=""></label>
+              </div>
+            </div>
+            <!-- Default Hidden -->
+            <div id="VisaReq" style="display: none;">
+                <input id="cardNum" type="number" name="cardNumber" placeholder="Card Number" required="">
+                <input id="cvvNum" type="number" name="CVV" placeholder="CVV" required="">
+                <input id="intDate" type="month" name="inputDate" placeholder="Date" min='1900-01-01' required="">
+            </div>
+            <div class="checkbox">
+                <label for="check">
+                    <input id="agree" type="checkbox" class="checkbox" required="">
+                    <span>I Agree To The Terms & Conditions</span>
+                </label>
+              </div>
+            <input type="button" value="Pay" id="submit" onclick="validation()" method="post">
+            <p class="back">Not right now?<a href="../Home/Home.html"> Cancel!</a></p>
+          </div>
+        </div>
+    </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <h3>© 2021 Caffein Line. All right reserved.</h3>
+      <div class="sosmed">
+          <a href="http://instagram.com" target="_blank"><img src="Assets/instagram.png" alt=""></a>
+          <a href="http://facebook.com" target="_blank"><img src="Assets/facebook.png" alt=""></a>
+        </div>
+    </div>
+<script src="Payment.js"></script>
+</body>
+</html>

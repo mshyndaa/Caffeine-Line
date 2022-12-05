@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CaffeinLine</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel = "icon" href = "../Home/Assets/logo.png" type = "image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+          <div class="logo"><img src="Assets/logo.png" alt=""></div>
+        <ul class="list">
+          <li><a href="Home.html">Home</a></li>
+          <li>
+            <a href="#" class="desktop-link">Menu</a>
+            <input type="checkbox" id="show-dropdown">
+            <label for="show-dropdown">Menu</label>
+            <ul>
+              <li><a href="../Coffee/coffee.html">Coffee</a></li>
+              <li><a href="../Tea/tea.html">Tea</a></li>
+              <li><a href="../Dessert/dessert.html">Desserts</a></li>
+            </ul>
+          </li>
+          <li><a href="../Payment/Payment.html">Payment</a></li>
+          <li><a href="../Contact Us/contactus.html">Contact Us</a></li>
+          <li class="button"><a href="../Sign Up/signup.html">Sign Up</a></li>
+          <li class="button"><a href="../Login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="Information">
+    <h2>About Us</h2>
+    <p>Caffein Line one of the best and the first online café in Indonesia, for those people who who want to enjoy coffees, tea, and other desserts from their home,</p> 
+    <p>with an aesthetic and calming vibes.</p>
+
+    <div class="container1">
+        <div class="slider">
+            <link rel="stylesheet" href="slider.css">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+    
+                <div class="slide first">
+                    <img src="Assets/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Assets/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Assets/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Assets/4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Assets/5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Assets/6.png" alt="">
+                </div>
+                <!-- AUTOMATIC -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                </div>
+            </div>
+                <!-- MANUAL -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+        </div>
+    </div>
+        <script src="slider.js"></script>
+
+    <h2>Reason To Order</h2>
+    <p>Because we provide the best quality of ingredients and make sure everything is kept well and fresh and we served only the best and good things,</p> 
+    <p>made with heart and love so you can feel the vibes that you never felt before, and also free delivery fee.</p>
+  </div>
+  
+  <footer>
+    <h3>© 2021 Caffein Line. All right reserved.</h3>
+    <div class="sosmed">
+        <a href="http://instagram.com" target="_blank"><img src="Assets/instagram.png" alt=""></a>
+        <a href="http://facebook.com" target="_blank"><img src="Assets/facebook.png" alt=""></a>
+      </div>
+  </footer>
+</body>
+</html>

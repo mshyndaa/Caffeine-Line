@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  nav img{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    padding-left: 30px;
+  }
+  
+  .container{
+  position: relative;
+  width: 100%;
+  }
+  
+  .container nav{
+    background: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  nav .content{
+  display: flex;
+  align-items: center;
+  }
+  
+  nav .content .list{
+  margin-left: 80px;
+  display: flex;
+  }
+  
+  .content .list li{
+  list-style: none;
+  line-height: 80px;
+  }
+  
+  .content .list li a, .content .list li label{
+  color: #dfceb0;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  }
+  
+  .content .list li label{
+  display: none;
+  }
+  
+  .content .list li a:hover{
+  color: #b81d24;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #b81d24,
+               0 0 10px #b81d24;
+  }
+  .content .list li label:hover{
+  box-shadow: none;
+  }
+  
+  .container .menu-icon{
+  color: #dfceb0;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+  }
+  
+  .container .menu-icon{
+  display: none;
+  }
+  
+  .container input[type="checkbox"]{
+  display: none;
+  }
+  
+  .content .button a{
+  text-transform: uppercase;
+  position: relative;
+  left: 600px;
+  text-align: center;
+  }
+  
+  .content .button a:hover{
+  font-weight: 700;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+  }
+  
+  /* DROPDOWN */
+  .content .list ul{
+    position: absolute;
+    background: black;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 3.s;
+    border-top: 1px solid #b81d24;
+  }
+  
+  .content .list li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+  
+  .content .list ul li a{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px;
+  }
+  
+  .content .list ul ul{
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+  }
+  
+  .content .list ul li{
+    position: relative;
+  }
+  
+  .content .list ul li:hover ul{
+    top: 0;
+  }
+
+/* MENU */
+.menu{
+  width: 100%;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 15%;
+  z-index: -1;
+}
+
+.menu-heading{
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b81d24;
+  font-weight: 1000;
+  margin-bottom: 100px;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-self: center;
+  grid-gap: 20px;
+  background-color: #b81d24;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+}
+
+.menu-container{
+width: 100%;
+height: 100%;
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 0 2rem rgb(0, 0, 0, .2);
+transition: all 0.4s ease;
+}
+
+.menu-container:hover{
+box-shadow: 0 0 5rem rgb(0, 0, 0, .4);
+transform: scale(1.02);
+}
+
+.menu-title{
+font-size: 20px;
+padding: 10px;
+text-align: center;
+}
+
+.price{
+font-size: 17px;
+margin-top: 5px;
+margin-bottom: 10px;
+text-align: center;
+}
+  
+/* FOOTER */
+  footer{
+    position: absolute;
+    background-color: #000000;
+    color: #dfceb0;
+    height: 18%;
+    top: 140%;
+    align-items: center;
+    padding: 4%;
+    width: 100%;
+    font-size: 110%;
+    justify-content: center;
+}
+
+.sosmed{
+    position: absolute;
+    left: 80%;
+    justify-content: center;
+}
+
+.sosmed img{
+    position: relative;
+    width: 15%;
+    height: 15%;
+    top: -40px;
+    margin-left: 10px;
+}
+
+/* RESPONSIVE */
+
+  @media screen and (max-width:2200px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 1300px;
+    }
+  }
+
+  @media screen and (max-width:2100px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 1200px;
+    }
+  }
+
+  @media screen and (max-width:2000px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 1100px;
+    }
+  }
+  
+  @media screen and (max-width:1900px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 1000px;
+    }
+  }
+  
+  @media screen and (max-width:1800px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 900px;
+    }
+
+    .footer{
+      top: 130%;
+    }
+  }
+  
+  @media screen and (max-width:1700px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 800px;
+    }
+
+    .footer{
+      top: 120%;
+    }
+  }
+  
+  @media screen and (max-width: 1600px){
+    .container nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    
+    nav .content .list{
+      margin-left: 30px;
+    }
+    
+    .content .list li a{
+      padding: 8px 13px;
+    }
+  
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 750px;
+    }
+  }
+  
+  @media screen and (max-width:1500px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 650px;
+    }
+
+    .footer{
+      top: 110%;
+    }
+  }
+  
+  @media screen and (max-width:1400px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 550px;
+    }
+
+    .footer{
+      top: 110%;
+    }
+  }
+  
+  @media screen and (max-width:1300px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 450px;
+    }
+
+    .footer{
+      top: 100%;
+      height: 125px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px){
+    .container nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    nav .content .list{
+      margin-left: 30px;
+    }
+  
+    .content .list li a{
+      padding: 8px 13px;
+    }
+  
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 350px;
+    }
+  }
+  
+  @media screen and (max-width:1100px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 250px;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 150px;
+    }
+
+    .footer{
+      top: 95%;
+      height: 100px;
+    }
+  }
+  
+  @media screen and (max-width:900px) {
+    .content .button a{
+      text-transform: uppercase;
+      position: relative;
+      left: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+  
+    nav img{
+      display: none;
+    }
+  
+    .container .menu-icon{
+      display: block;
+    }
+  
+    nav .content .list{
+      display: block;
+      position: fixed;
+      background: black;
+      height: 100%;
+      width: 100%;
+      top: 70px;
+      left: -100%;
+      margin-left: 0;
+      max-width: 350px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+      transition: all 0.3s ease;
+    }
+    
+    nav #show-menu:checked ~ .content .list{
+      left: 0%;
+    }
+  
+    .content .list li{
+      margin: 15px 20px;
+    }
+  
+    .content .list li a, .content .list li label{
+      line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+  
+    .content .list li a.desktop-link{
+      display: none;
+    }
+  
+  /* DROPDOWN */
+   .content .list ul, .content .list ul ul{
+     position: static;
+     opacity: 1;
+     visibility: visible;
+     background: none;
+     max-height: 0px;
+     overflow: hidden;
+     
+   }
+  
+   .content .list #show-dropdown:checked ~ ul{
+     max-height: 300px;
+   }
+  
+   .content .list ul li{
+     margin: 7px 20px;
+   }
+  
+   .content .list ul li a{
+     font-size: 18px;
+     line-height: 30px;
+     border-radius: 5px;
+   }
+  
+    .content .button a{
+      text-transform: uppercase;
+      left: 0;
+    }
+
+    .menu-grid{
+      grid-template-columns: repeat(2, auto);
+    }
+
+    .footer{
+      top: 150%;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .footer{
+    top: 130%;
+    height: 100px;
+    }
+  }
